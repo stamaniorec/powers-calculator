@@ -3,10 +3,11 @@
 #ifndef STRING_T_H
 #define STRING_T_H
 
+#define BUFFER_SIZE 512
+
 typedef struct {
     int length;
-    int capacity;
-    char* string;
+    char string[BUFFER_SIZE];
 } string_t;
 
 void init_string(string_t* string, char* initial_value);
