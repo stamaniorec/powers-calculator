@@ -94,10 +94,7 @@ void improve_expression(string_t* expr) {
 
 // Formats the given infix expression string by adding whitespace around operators
 // Returns a newly built string
-string_t* format_expression_string(string_t* expr) {
-    string_t* result = malloc(sizeof(string_t));
-    init_string(result, "");
-
+void format_expression_string(string_t* expr, string_t* result) {
     int length = strlen(expr->string);
     for(int i = 0; i < length-1; ++i) {
         char cur_char = expr->string[i];
@@ -122,5 +119,5 @@ string_t* format_expression_string(string_t* expr) {
     }
 
     append(result, &expr->string[length-1]);
-    return result;
+    // return result;
 }

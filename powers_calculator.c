@@ -55,10 +55,12 @@ void demo_evaluate_expression() {
     string_t expression;
     init_string(&expression, "(429*(9394-(934+43/21))/3.14)-341.3*45.2-3.14");
     improve_expression(&expression);
-    string_t* formatted = format_expression_string(&expression);
+    string_t formatted;
+    init_string(&formatted, "");
+    format_expression_string(&expression, &formatted);
     printf("%Lf\n", evaluate(&expression));
     destroy_string(&expression);
-    destroy_string(formatted);
+    destroy_string(&formatted);
 }
 
 int main(int argc, char const *argv[])

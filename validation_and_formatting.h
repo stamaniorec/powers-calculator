@@ -8,6 +8,6 @@
 bool are_parenthesis_balanced(string_t* expr);
 bool valid_expression(string_t* expr);
 void improve_expression(string_t* expr);
-string_t* format_expression_string(string_t* expr);
+void format_expression_string(string_t* expr, string_t* result);
 
 #endif

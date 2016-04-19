@@ -40,7 +40,10 @@ double apply_op(char op, double b, double a) {
 // as well as the top one from the operator stack, and the operation is applied.
 
 long double evaluate(string_t* expr) {
-    string_t* formatted = format_expression_string(expr);
+    string_t formatted;
+    init_string(&formatted, "");
+    format_expression_string(expr, &formatted);
+    // string_t* formatted = format_expression_string(expr);
 
     stack values;
     stack_new(&values, sizeof(double), NULL);
@@ -48,34 +51,34 @@ long double evaluate(string_t* expr) {
     stack ops;
     stack_new(&ops, sizeof(char), NULL);
 
-    int length = strlen(formatted->string);
+    int length = strlen(formatted.string);
 
     for(int i = 0; i < length; i++) {
         // Current token is a whitespace, skip it
-        if (formatted->string[i] == ' ')
+        if (formatted.string[i] == ' ')
             continue;
 
         // Current token is a number, push it to stack for numbers
-        if((formatted->string[i] >= '0' && formatted->string[i] <= '9') || (formatted->string[i] == '.')) {
+        if((formatted.string[i] >= '0' && formatted.string[i] <= '9') || (formatted.string[i] == '.')) {
             string_t buf;
             init_string(&buf, "");
 
             // There may be more than one digits in number
             while(i < length &&
-                ((formatted->string[i] >= '0' && formatted->string[i] <= '9')) || formatted->string[i] == '.') {
+                ((formatted.string[i] >= '0' && formatted.string[i] <= '9')) || formatted.string[i] == '.') {
                 char as_string[2] = "\0";
-                as_string[0] = formatted->string[i++];
+                as_string[0] = formatted.string[i++];
                 append(&buf, as_string);
             }
 
             double result = atof(buf.string);
             stack_push(&values, &result);
-        } else if(formatted->string[i] == '(') {
+        } else if(formatted.string[i] == '(') {
             // Current token is an opening brace, push it to 'ops'
             char as_string[2] = "\0";
-            as_string[0] = formatted->string[i];
+            as_string[0] = formatted.string[i];
             stack_push(&ops, as_string);
-        } else if(formatted->string[i] == ')') {
+        } else if(formatted.string[i] == ')') {
             // Closing brace encountered, solve entire brace
             while(TRUE) {
                 char top;
@@ -95,7 +98,7 @@ long double evaluate(string_t* expr) {
 
             char unused;
             stack_pop(&ops, &unused); // pop (
-        } else if(is_operator(formatted->string[i])) {
+        } else if(is_operator(formatted.string[i])) {
             // While top of 'ops' has same or greater precedence to current
             // token, which is an operator. Apply operator on top of 'ops'
             // to top two elements in values stack
@@ -103,7 +106,7 @@ long double evaluate(string_t* expr) {
                 char top = '(';
                 if(!stack_empty(&ops))
                     stack_peek(&ops, &top);
-                if(stack_empty(&ops) || !has_precedence(formatted->string[i], top)) break;
+                if(stack_empty(&ops) || !has_precedence(formatted.string[i], top)) break;
 
                 double a, b;
                 stack_pop(&values, &a);
@@ -123,7 +126,7 @@ long double evaluate(string_t* expr) {
         
             // Push current token to 'ops'.
             char as_string[2] = "\0";
-            as_string[0] = formatted->string[i];
+            as_string[0] = formatted.string[i];
             stack_push(&ops, as_string);
         }
     }
