@@ -6,41 +6,41 @@
 
 int stack_size(stack *s)
 {
-    return list_size(s->list);
+    return s->size;
 }
 
 void stack_new(stack *s, int elementSize, freeFunction freeFn)
 {
-    s->list = malloc(sizeof(list));
-    // make sure the malloc call didn't fail...
-    assert(s->list != NULL);
-
-    list_new(s->list, elementSize, freeFn);
+    s->elementSize = elementSize;
+    s->size = 0;
 }
 
 void stack_destroy(stack *s)
-{
-    list_destroy(s->list);
-    free(s->list);
-}
+{}
+
+#include <string.h>
 
 void stack_push(stack *s, void *element)
 {
-    list_prepend(s->list, element);
+    char* p = s->buff + s->size*s->elementSize;
+    memcpy(p, element, s->elementSize);
+    s->size = s->size + 1;
 }
 
 void stack_pop(stack *s, void *element)
 {
     // don't pop an empty stack!
     assert(stack_size(s) > 0);
-
-    list_head(s->list, element, TRUE);
+    char* p = s->buff + (s->size-1)*s->elementSize;
+    memcpy(element, p, s->elementSize);
+    s->size = s->size - 1;
 }
 
 void stack_peek(stack *s, void *element)
 {
     assert(stack_size(s) > 0);
-    list_head(s->list, element, FALSE);
+    char* p = s->buff + (s->size-1)*s->elementSize;
+    memcpy(element, p, s->elementSize);
 }
 
 bool stack_empty(stack* s) {
