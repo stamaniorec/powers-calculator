@@ -1,4 +1,4 @@
-// Written by Stanimir Bogdanov
+/* Written by Stanimir Bogdanov */
 
 #ifndef STACK_H
 #define STACK_H
@@ -16,7 +16,7 @@ typedef struct {
 typedef void (*freeFunction)(void *);
 
 int stack_size(stack *s);
-void stack_new(stack *s, int elementSize, freeFunction freeFn);
+void stack_new(stack *s, int elementSize);
 void stack_push(stack *s, void *element);
 void stack_pop(stack *s, void *element);
 void stack_peek(stack *s, void *element);

@@ -9,14 +9,11 @@ int stack_size(stack *s)
     return s->size;
 }
 
-void stack_new(stack *s, int elementSize, freeFunction freeFn)
+void stack_new(stack *s, int elementSize)
 {
     s->elementSize = elementSize;
     s->size = 0;
 }
-
-void stack_destroy(stack *s)
-{}
 
 #include <string.h>
 
@@ -29,17 +26,19 @@ void stack_push(stack *s, void *element)
 
 void stack_pop(stack *s, void *element)
 {
-    // don't pop an empty stack!
+    char* p;
+    /* don't pop an empty stack! */
     assert(stack_size(s) > 0);
-    char* p = s->buff + (s->size-1)*s->elementSize;
+    p = s->buff + (s->size-1)*s->elementSize;
     memcpy(element, p, s->elementSize);
     s->size = s->size - 1;
 }
 
 void stack_peek(stack *s, void *element)
 {
+    char* p;
     assert(stack_size(s) > 0);
-    char* p = s->buff + (s->size-1)*s->elementSize;
+    p = s->buff + (s->size-1)*s->elementSize;
     memcpy(element, p, s->elementSize);
 }
 

@@ -1,4 +1,4 @@
-// Written by Stanimir Bogdanov 
+/* Written by Stanimir Bogdanov */
 
 #ifndef VALIDATION_AND_FORMATTING_H
 #define VALIDATION_AND_FORMATTING_H

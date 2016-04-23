@@ -1,4 +1,4 @@
-// Written by Stanimir Bogdanov
+/* Written by Stanimir Bogdanov */
 
 #ifndef UTILS_H
 #define UTILS_H

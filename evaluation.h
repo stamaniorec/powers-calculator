@@ -1,4 +1,4 @@
-// Written by Stanimir Bogdanov 
+/* Written by Stanimir Bogdanov */
 
 #ifndef EVALUATION_H
 #define EVALUATION_H

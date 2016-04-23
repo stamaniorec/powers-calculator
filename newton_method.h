@@ -1,4 +1,4 @@
-// Written by Stanimir Bogdanov
+/* Written by Stanimir Bogdanov */
 
 #ifndef NEWTON_METHOD_H
 #define NEWTON_METHOD_H

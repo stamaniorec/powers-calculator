@@ -16,19 +16,19 @@ void init_newton_method_instance(newton_method_instance* newton, long double x0,
     newton->exp_num = exp_num;
 }
 
-// The x0 returned is actually the solution to the equation
+/* The x0 returned is actually the solution to the equation */
 long double pick_x0(exponentiated_number exp_num)
 {
     return pow(exp_num.base, (long double)exp_num.power_numerator/exp_num.power_denominator);
 }
 
-// The function on which Newton's method is applied
+/* The function on which Newton's method is applied */
 long double f(long double x, exponentiated_number exp_num)
 {
     return pow(x, exp_num.power_denominator) - pow(exp_num.base, exp_num.power_numerator);
 }
 
-// Returns the derivative of the function on which Newton's method is applied
+/* Returns the derivative of the function on which Newton's method is applied */
 long double df(long double x, exponentiated_number exp_num)
 {
     const double delta = DERIVATIVE_DELTA;
@@ -39,7 +39,7 @@ long double df(long double x, exponentiated_number exp_num)
     return (y2 - y1) / (x2 - x1);
 }
 
-// Returns the value of the next iteration of Newton's method or the appropriate error code
+/* Returns the value of the next iteration of Newton's method or the appropriate error code */
 long double next(exponentiated_number* exp_num, newton_method_instance* newton)
 {
     long double y = f(newton->x0, *exp_num);
@@ -65,10 +65,12 @@ long double next(exponentiated_number* exp_num, newton_method_instance* newton)
     return newton->x1;
 }
 
-// Continuously runs Newton's method iterations until a solution is found
+/* Continuously runs Newton's method iterations until a solution is found */
 long double fastforward(exponentiated_number* exp_num, newton_method_instance* newton) {
-    for(int i = newton->cur_itr; i < newton->max_iterations; ++i) {
-        long double next_ = next(exp_num, newton);
+    int i;
+    long double next_;
+    for(i = newton->cur_itr; i < newton->max_iterations; ++i) {
+        next_ = next(exp_num, newton);
         if(next_ == newton_iteration_statuses[SOLUTION_FOUND]) return newton->x1;
     }
     return newton_iteration_statuses[NaN];
