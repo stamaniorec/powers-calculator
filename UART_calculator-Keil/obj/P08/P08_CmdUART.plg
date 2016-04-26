@@ -1,0 +1,28 @@
+Build Project 'P08_CmdUART' - Target 'P08_CmdUART'
+assembling SAM7.s...
+compiling CmdUART.c...
+P08_CmdUART\CmdUART.c(131): warning:  #111-D: statement is unreachable
+P08_CmdUART\CmdUART.c(72): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6540 RO-data=3936 RW-data=44 ZI-data=1164  
+".\obj\P08\P08_CmdUART.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VMKS2015\\KeilProject_v0.02\\obj\\P08\\P08_CmdUART.AXF" 
+VTarget = 3.319V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 25 2013 19:20:08
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.

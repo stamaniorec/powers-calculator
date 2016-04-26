@@ -1,0 +1,4 @@
+--device DARMATS ".\obj\p01\sam7.o" ".\obj\p01\myempty.o" ".\obj\LIB_AT91SAM7.lib" --library_type=microlib --strict --scatter ".\obj\P01\P01_MyEmpty.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\P01_MyEmpty.map" -o ".\obj\P01\P01_MyEmpty.axf"

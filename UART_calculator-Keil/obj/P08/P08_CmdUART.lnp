@@ -1,0 +1,4 @@
+--device DARMATS ".\obj\p08\sam7.o" ".\obj\p08\cmduart.o" ".\obj\LIB_AT91SAM7.lib" --library_type=microlib --strict --scatter ".\obj\P08\P08_CmdUART.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\P08_CmdUART.map" -o ".\obj\P08\P08_CmdUART.axf"

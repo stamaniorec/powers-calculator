@@ -1,0 +1,4 @@
+Build Project 'P03_DigInp' - Target 'P03_DigInp'
+assembling SAM7.s...
+--- Error: failed to execute 'BIN40\ArmAsm'
+Target not created

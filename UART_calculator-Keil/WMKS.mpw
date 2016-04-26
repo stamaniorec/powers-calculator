@@ -1,0 +1,14 @@
+
+[WORKSPACE]
+  MPW_NAME="WMKS"
+  Project=".\Libraryes.Uv2"
+  Project=".\P01_MyEmpty.Uv2"
+  Project=".\P01_MyEmpty_UART.Uv2",A,X
+  Project=".\P02_DigiClock.Uv2"
+  Project=".\P03_DigInp.Uv2"
+  Project=".\P04_DigOut.Uv2"
+  Project=".\P05_ADC.Uv2"
+  Project=".\P06_ClockRTT.Uv2"
+  Project=".\P07_LoopUART.Uv2"
+  Project=".\P08_CmdUART.Uv2"
+

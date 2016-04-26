@@ -1,0 +1,103 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+Target (UART_calculator), 0x0004 // Tools: 'ARM-ADS'
+
+Group (Source)
+
+File 1,2,<.\SAM7.s><SAM7.s>
+File 1,4,<.\obj\LIB_AT91SAM7.lib><LIB_AT91SAM7.lib>
+File 1,1,<.\UART_calculator\UART_calculator.c><UART_calculator.c>
+File 1,1,<.\UART_calculator\evaluation.c><evaluation.c>
+
+
+Options 1,0,0  // Target 'UART_calculator'
+ Device (AT91SAM7X256)
+ Vendor (Atmel)
+ Cpu (IRAM(0x200000-0x20FFFF) IROM(0x100000-0x13FFFF) CLOCK(18432000) CPUTYPE(ARM7TDMI))
+ FlashUt ()
+ StupF ("STARTUP\Atmel\SAM7.s" ("Atmel AT91SAM7 Startup Code"))
+ FlashDR (UL2ARM(-U56240812 -O15 -S0 -C0 -FO7 -FD200000 -FC800 -FN1 -FF0AT91SAM7_256 -FS0100000 -FL040000))
+ DevID (4081)
+ Rgf (AT91SAM7X256.H)
+ Mem ()
+ C ()
+ A ()
+ RL ()
+ OH ()
+ DBC_IFX ()
+ DBC_CMS ()
+ DBC_AMS ()
+ DBC_LMS ()
+ UseEnv=0
+ EnvBin ()
+ EnvInc ()
+ EnvLib ()
+ EnvReg (Atmel\SAM7X\)
+ OrgReg (Atmel\SAM7X\)
+ TgStat=16
+ OutDir (.\obj\P01_UART\)
+ OutName (UART_calculator)
+ GenApp=1
+ GenLib=0
+ GenHex=0
+ Debug=1
+ Browse=1
+ LstDir (.\)
+ HexSel=1
+ MG32K=0
+ TGMORE=0
+ RunUsr 0 0 <>
+ RunUsr 1 0 <>
+ BrunUsr 0 0 <>
+ BrunUsr 1 0 <>
+ CrunUsr 0 0 <>
+ CrunUsr 1 0 <>
+ SVCSID <>
+ GLFLAGS=1790
+ ADSFLGA { 243,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ACPUTYP (ARM7TDMI)
+ RVDEV ()
+ ADSTFLGA { 0,12,0,18,99,4,0,66,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSOCM { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSIRAM { 0,0,0,32,0,0,0,1,0 }
+ OCMADSIROM { 1,0,0,16,0,0,0,4,0 }
+ OCMADSXRAM { 0,0,0,0,0,0,0,0,0 }
+ OCR_RVCT { 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,16,0,0,0,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,0,1,0,0,0,0,0,0,0,0,0,0 }
+ RV_STAVEC ()
+ ADSCCFLG { 5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSCMISC ()
+ ADSCDEFN ()
+ ADSCUDEF ()
+ ADSCINCD (.\LIB_AT91SAM7;.\LIB_SAM7EX256;.\LIB_LCDGE8;.\P01_MyEmpty_UART)
+ ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSAMISC ()
+ ADSADEFN ()
+ ADSAUDEF ()
+ ADSAINCD ()
+ PropFld { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ IncBld=1
+ AlwaysBuild=0
+ GenAsm=0
+ AsmAsm=0
+ PublicsOnly=0
+ StopCode=3
+ CustArgs ()
+ LibMods ()
+ ADSLDFG { 17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSLDTA (0x00100000)
+ ADSLDDA (0x00200000)
+ ADSLDSC ()
+ ADSLDIB ()
+ ADSLDIC ()
+ ADSLDMC ()
+ ADSLDIF ()
+ ADSLDDW ()
+  OPTDL (SARM.DLL)(-cAT91SAM7X)(DARMATS.DLL)(-p91SAM7X256)(SARM.DLL)()(TARMATS.DLL)(-p91SAM7X256)
+  OPTDBG 45054,6,()()()()()()()()()() (Segger\JLTAgdi.dll)()()()
+ FLASH1 { 9,0,0,0,1,0,0,0,4,16,0,0,0,0,0,0,0,0,0,0 }
+ FLASH2 (Segger\JLTAgdi.dll)
+ FLASH3 ("" ())
+ FLASH4 ()
+EndOpt
+

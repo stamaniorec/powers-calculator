@@ -1,0 +1,11 @@
+.\obj\P08\cmduart.o: P08_CmdUART\CmdUART.c
+.\obj\P08\cmduart.o: .\LIB_AT91SAM7\basedef.h
+.\obj\P08\cmduart.o: .\LIB_SAM7EX256\board.h
+.\obj\P08\cmduart.o: .\LIB_AT91SAM7\ioat91sam7x256.h
+.\obj\P08\cmduart.o: .\LIB_LCDGE8\lcd_GE8.h
+.\obj\P08\cmduart.o: .\LIB_LCDGE8\font.h
+.\obj\P08\cmduart.o: .\LIB_LCDGE8\fixedsys.h
+.\obj\P08\cmduart.o: .\LIB_AT91SAM7\lib_at91sam7_pio.h
+.\obj\P08\cmduart.o: .\LIB_AT91SAM7\lib_at91sam7_pmc.h
+.\obj\P08\cmduart.o: .\LIB_AT91SAM7\lib_at91sam7_usart.h
+.\obj\P08\cmduart.o: ..\Keil3.80a\ARM\RV31\INC\string.h

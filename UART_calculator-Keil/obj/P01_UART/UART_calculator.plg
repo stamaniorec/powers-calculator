@@ -1,0 +1,2406 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\embedded\VMKS2015\calcKeilProject\UART_calculator.uv2
+Project File Date:  04/24/2016
+
+<h2>Output:</h2>
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(136): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(91): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(91): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(107): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=13976 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 8 Warning(s).
+Build target 'UART_calculator'
+compiling string_t.c...
+linking...
+.\obj\P01_UART\UART_calculator.axf: Error: L6200E: Symbol pesho multiply defined (by string_t.o and uart_calculator.o).
+Target not created
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(132): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(107): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=13972 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 8 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Using DBGRQ to halt CPU
+Info: Resetting TRST in order to halt CPU
+***JLink Error: Unable to halt CPU core
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Using DBGRQ to halt CPU
+Info: Resetting TRST in order to halt CPU
+***JLink Error: Unable to halt CPU core
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(132): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(107): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=13972 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 8 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Using DBGRQ to halt CPU
+Info: Resetting TRST in order to halt CPU
+***JLink Error: Unable to halt CPU core
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Using DBGRQ to halt CPU
+Info: Resetting TRST in order to halt CPU
+***JLink Error: Unable to halt CPU core
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Using DBGRQ to halt CPU
+Info: Resetting TRST in order to halt CPU
+***JLink Error: Unable to halt CPU core
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling string_t.c...
+linking...
+Program Size: Code=13964 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(132): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(104): error:  #20: identifier "length" is undefined
+UART_calculator\validation_and_formatting.c(106): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(106): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=13964 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(106): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "str" was set but never used
+UART_calculator\validation_and_formatting.c(137): error:  #513: a value of type "string_t" cannot be assigned to an entity of type "char"
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(106): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14032 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 2 Warning(s).
+Build target 'UART_calculator'
+linking...
+Program Size: Code=14032 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+linking...
+Program Size: Code=14032 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+linking...
+Program Size: Code=14032 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(106): warning:  #177-D: variable "next_char" was declared but never referenced
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14032 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 2 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): error:  #20: identifier "curr_char" is undefined
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): error:  #109: expression must have (pointer-to-) function type
+UART_calculator\validation_and_formatting.c(108): warning:  #550-D: variable "curr_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "curr_char_is_operator" was set but never used
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "next_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): error:  #109: expression must have (pointer-to-) function type
+UART_calculator\validation_and_formatting.c(108): warning:  #550-D: variable "curr_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "curr_char_is_operator" was set but never used
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "next_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): error:  #109: expression must have (pointer-to-) function type
+UART_calculator\validation_and_formatting.c(108): warning:  #550-D: variable "curr_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "curr_char_is_operator" was set but never used
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "next_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(108): warning:  #550-D: variable "curr_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(109): warning:  #550-D: variable "curr_char_is_operator" was set but never used
+UART_calculator\validation_and_formatting.c(110): warning:  #550-D: variable "next_char_is_digit" was set but never used
+UART_calculator\validation_and_formatting.c(111): warning:  #550-D: variable "next_char_is_operator" was set but never used
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14276 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14208 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14204 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(132): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14204 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(126): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(116): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14204 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Build target 'UART_calculator'
+linking...
+Program Size: Code=14204 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14204 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14188 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(126): error:  #20: identifier "str_t" is undefined
+UART_calculator\UART_calculator.c(133): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(133): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=14224 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(104): warning:  #223-D: function "printf" declared implicitly
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(126): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(116): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14296 RO-data=4020 RW-data=52 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 6 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14224 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling string_t.c...
+linking...
+Program Size: Code=14224 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(133): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling string_t.c...
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(124): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(114): warning:  #550-D: variable "str" was set but never used
+linking...
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol prepend (referred from validation_and_formatting.o).
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling evaluation.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(5): error:  #5: cannot open source input file "string_t.h": No such file or directory
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling evaluation.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(19): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(22): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(23): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(25): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(44): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(47): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(50): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(54): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(59): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(60): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(66): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(67): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(77): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(78): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(90): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(91): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(93): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(93): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(94): warning:  #223-D: function "prepend" declared implicitly
+UART_calculator\validation_and_formatting.c(99): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(99): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(101): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(102): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(104): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(105): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(117): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(118): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(120): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(127): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(128): error:  #132: expression must have pointer-to-struct-or-union type
+UART_calculator\validation_and_formatting.c(133): error:  #132: expression must have pointer-to-struct-or-union type
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling evaluation.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(44): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(90): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.c(94): warning:  #223-D: function "prepend" declared implicitly
+UART_calculator\validation_and_formatting.c(120): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(113): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling evaluation.c...
+UART_calculator\evaluation.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(94): warning:  #223-D: function "prepend" declared implicitly
+UART_calculator\validation_and_formatting.c(120): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(113): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\evaluation.h(10): error:  #20: identifier "string_t" is undefined
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.h(10): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\validation_and_formatting.h(6): error:  #5: cannot open source input file "string_t.h": No such file or directory
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\validation_and_formatting.h(6): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(7): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(8): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\evaluation.c(58): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(62): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(66): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(66): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(66): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(67): error:  #20: identifier "string_t" is undefined
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(72): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(72): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(72): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(73): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+UART_calculator\evaluation.c(79): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(81): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(83): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(99): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(107): error:  #154: expression must have struct or union type
+UART_calculator\evaluation.c(124): error:  #154: expression must have struct or union type
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\validation_and_formatting.h(6): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(7): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(8): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\validation_and_formatting.h(9): error:  #20: identifier "string_t" is undefined
+UART_calculator\evaluation.c(67): error:  #20: identifier "string_t" is undefined
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\evaluation.c(67): error:  #20: identifier "string_t" is undefined
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+UART_calculator\evaluation.c(77): error:  #167: argument of type "char" is incompatible with parameter of type "const char *"
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+UART_calculator\evaluation.c(77): error:  #154: expression must have struct or union type
+Target not created
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+UART_calculator\evaluation.c(77): error:  #167: argument of type "char" is incompatible with parameter of type "const char *"
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+linking...
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol append (referred from evaluation.o).
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol init_string (referred from evaluation.o).
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol prepend (referred from validation_and_formatting.o).
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.c(68): warning:  #223-D: function "init_string" declared implicitly
+UART_calculator\evaluation.c(74): warning:  #223-D: function "append" declared implicitly
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(94): warning:  #223-D: function "prepend" declared implicitly
+UART_calculator\validation_and_formatting.c(120): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(121): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(123): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(113): warning:  #550-D: variable "str" was set but never used
+linking...
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol append (referred from evaluation.o).
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol init_string (referred from evaluation.o).
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol prepend (referred from validation_and_formatting.o).
+Target not created
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'UART_calculator'
+compiling evaluation.c...
+UART_calculator\evaluation.c(77): error:  #20: identifier "buff" is undefined
+Target not created
+Build target 'UART_calculator'
+compiling evaluation.c...
+linking...
+.\obj\P01_UART\UART_calculator.axf: Error: L6218E: Undefined symbol prepend (referred from validation_and_formatting.o).
+Target not created
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(127): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(128): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(120): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14080 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(127): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(128): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(120): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14080 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(127): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(128): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(120): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(127): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(128): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(120): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14080 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 8 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(127): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(128): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(120): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14080 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 5 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(108): error:  #101: "expr_len" has already been declared in the current scope
+UART_calculator\validation_and_formatting.c(109): error:  #101: "res_len" has already been declared in the current scope
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+UART_calculator\validation_and_formatting.c(107): warning:  #177-D: variable "expr_len" was declared but never referenced
+UART_calculator\validation_and_formatting.c(107): warning:  #177-D: variable "res_len" was declared but never referenced
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14080 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14088 RO-data=4020 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14088 RO-data=4072 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(111): error:  #20: identifier "exp" is undefined
+UART_calculator\validation_and_formatting.c(111): error:  #20: identifier "expr_len" is undefined
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14088 RO-data=4072 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14092 RO-data=4092 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.c(53): error:  #20: identifier "msg" is undefined
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+Target not created
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+_____^
+*** error 56: cant open file
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.c(53): error:  #167: argument of type "int" is incompatible with parameter of type "char *"
+UART_calculator\evaluation.c(53): error:  #140: too many arguments in function call
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+UART_calculator\evaluation.c(53): error:  #167: argument of type "int" is incompatible with parameter of type "char *"
+UART_calculator\evaluation.c(53): error:  #140: too many arguments in function call
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(129): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(130): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(131): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(122): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(87): warning:  #550-D: variable "fw" was set but never used
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14088 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 11 Warning(s).
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14084 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14096 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14112 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14112 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14120 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14112 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(130): warning:  #111-D: statement is unreachable
+compiling evaluation.c...
+compiling exponentiated_number.c...
+UART_calculator\exponentiated_number.c(7): warning:  #223-D: function "round" declared implicitly
+compiling newton_method.c...
+compiling stack.c...
+UART_calculator\stack.c(43): warning:  #188-D: enumerated type mixed with another type
+compiling utils.c...
+UART_calculator\utils.c(4): warning:  #188-D: enumerated type mixed with another type
+compiling validation_and_formatting.c...
+UART_calculator\validation_and_formatting.c(132): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(133): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(134): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(135): warning:  #188-D: enumerated type mixed with another type
+UART_calculator\validation_and_formatting.c(125): warning:  #550-D: variable "str" was set but never used
+linking...
+Program Size: Code=14112 RO-data=4040 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 9 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(114): error:  #20: identifier "fh" is undefined
+UART_calculator\UART_calculator.c(115): error:  #20: identifier "fw" is undefined
+UART_calculator\UART_calculator.c(126): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #177-D: variable "double_res" was declared but never referenced
+UART_calculator\UART_calculator.c(88): warning:  #177-D: variable "result" was declared but never referenced
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(126): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #177-D: variable "double_res" was declared but never referenced
+UART_calculator\UART_calculator.c(88): warning:  #177-D: variable "result" was declared but never referenced
+linking...
+Program Size: Code=6412 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(126): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(87): warning:  #177-D: variable "double_res" was declared but never referenced
+UART_calculator\UART_calculator.c(88): warning:  #177-D: variable "result" was declared but never referenced
+linking...
+Program Size: Code=6404 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(118): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6384 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(118): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6384 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 0.000V
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Failed!
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(118): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6384 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 1.727V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+Info: Failed to program ICE breaker before Reset, using default reset strategy.
+Info: Resetting target using RESET pin
+Info: Resetting TRST
+***JLink Error: Bad JTAG communication: Write to IR: Expected 0x1, got 0x0 (TAP Command : 4) @ Off 0x338.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 1000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+***JLink Error: Read memory error @ address 0x00000000, word access: Core error.
+Info: Resetting target using RESET pin
+Info: Resetting TRST
+***JLink Error: Could not find supported CPU core on JTAG chain
+JTAG speed: 1000 kHz
+***JLink Warning: Target system has been power-cycled
+Info: TotalIRLen = 4, IRPrint = 0x01
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(119): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6388 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.274V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(121): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6400 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(118): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(78): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6384 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(121): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(81): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(81): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6400 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(73): error:  #20: identifier "bckgColor" is undefined
+UART_calculator\UART_calculator.c(122): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(82): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(82): warning:  #550-D: variable "fw" was set but never used
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(73): error:  #20: identifier "bckgColor" is undefined
+UART_calculator\UART_calculator.c(122): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(82): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(82): warning:  #550-D: variable "fw" was set but never used
+Target not created
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(123): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(83): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(83): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6408 RO-data=3884 RW-data=44 ZI-data=1164  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.267V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(125): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(85): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(85): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6416 RO-data=3884 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Build target 'UART_calculator'
+linking...
+Program Size: Code=6416 RO-data=3884 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.274V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+assembling SAM7.s...
+compiling UART_calculator.c...
+UART_calculator\UART_calculator.c(123): warning:  #111-D: statement is unreachable
+UART_calculator\UART_calculator.c(83): warning:  #550-D: variable "fh" was set but never used
+UART_calculator\UART_calculator.c(83): warning:  #550-D: variable "fw" was set but never used
+linking...
+Program Size: Code=6404 RO-data=3884 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 3 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.410V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+Info: Core does not stop after Reset, setting WP to stop it.
+***JLink Warning: PC of target system has unexpected value of 0x00100214 after reset.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+Info: Core does not stop after Reset, setting WP to stop it.
+***JLink Warning: PC of target system has unexpected value of 0x00200000 after reset.
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+linking...
+Program Size: Code=6404 RO-data=3884 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 3.397V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+Info: Core does not stop after Reset, setting WP to stop it.
+***JLink Warning: PC of target system has unexpected value of 0x00200000 after reset.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 8000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+Info: Core does not stop after Reset, setting WP to stop it.
+***JLink Warning: PC of target system has unexpected value of 0x00200000 after reset.
+JTAG speed: 1000 kHz
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'UART_calculator'
+linking...
+Program Size: Code=6404 RO-data=3884 RW-data=48 ZI-data=1160  
+".\obj\P01_UART\UART_calculator.axf" - 0 Error(s), 0 Warning(s).
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 0.155V
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.1 Volt).
+Please check target power.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+JTAG speed: 1000 kHz
+Erase Failed!
+Load "C:\\embedded\\VMKS2015\\calcKeilProject\\obj\\P01_UART\\UART_calculator.AXF" 
+VTarget = 1.727V
+Info: TotalIRLen = 4, IRPrint = 0x01
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+Info: Failed to program ICE breaker before Reset, using default reset strategy.
+Info: Resetting target using RESET pin
+Info: Resetting TRST
+***JLink Error: Bad JTAG communication: Write to IR: Expected 0x1, got 0x0 (TAP Command : 4) @ Off 0x338.
+DLL version V4.80f, compiled Feb  5 2014 10:36:54
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+Hardware-Breakpoints: 2
+Software-Breakpoints: 8192
+Watchpoints:          0
+Found 1 JTAG device, Total IRLen = 4:
+ Id of device #0: 0x3F0F0F0F
+ARM7 identified.
+JTAG speed: 1000 kHz
+Info: Device "AT91SAM7X256" selected (256 KB flash, 64 KB RAM).
+Info: Adaptive clocking not supported for selected CPU core. Only supported for -S cores.
+Info: Auto JTAG speed: 8000 kHz
+***JLink Error: Read memory error @ address 0x00200000, word access: Memory access timeout.
+JTAG speed: 1000 kHz
+***JLink Warning: Target system has been power-cycled
+Info: TotalIRLen = 4, IRPrint = 0x01
+Erase Done.
+Programming Done.
+Verify OK.

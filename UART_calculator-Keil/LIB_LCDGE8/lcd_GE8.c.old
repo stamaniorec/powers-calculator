@@ -1,0 +1,468 @@
+#include "ioat91sam7x256.h"
+#include "lib_at91sam7_spi.h"
+#include "lcd_GE8.h"
+//#include "bmp.h"
+#include "bits.h"
+
+AT91PS_PIO    l_pPioA   = AT91C_BASE_PIOA;
+AT91PS_PIO    l_pPioB   = AT91C_BASE_PIOB;
+AT91PS_SPI    l_pSpi    = AT91C_BASE_SPI0;
+AT91PS_PMC    l_pPMC    = AT91C_BASE_PMC;
+AT91PS_PDC    l_pPDC    = AT91C_BASE_PDC_SPI0;
+
+
+#define SPI_SR_TXEMPTY
+
+#define LCD_RESET_LOW     l_pPioA->PIO_CODR   = BIT2
+#define LCD_RESET_HIGH    l_pPioA->PIO_SODR   = BIT2
+
+void Delaya (unsigned long a) { while (--a!=0); }
+
+void Delay_ (unsigned long a) {
+
+  volatile unsigned long d;
+  d=a;
+  while (--d!=0);
+}
+
+unsigned int i,j;
+
+void InitLCD(void) {
+
+  // Pin for backlight
+  //l_pPioB->PIO_CODR   = BIT20;    // Set PB20 to LOW
+  l_pPioB->PIO_SODR   = BIT20;    // Set PB20 to HIGH
+  l_pPioB->PIO_OER    = BIT20;    // Configure PB20 as output
+
+  // Reset pin
+  l_pPioA->PIO_SODR   = BIT2;     // Set PA2 to HIGH
+  l_pPioA->PIO_OER    = BIT2;     // Configure PA2 as output
+
+  // CS pin
+  //l_pPioA->PIO_SODR   = BIT12;     // Set PA2 to HIGH
+  //l_pPioA->PIO_OER    = BIT12;     // Configure PA2 as output
+
+
+  // Init SPI0
+  //set functionality to pins:
+  //port0.12 -> NPCS0
+  //port0.16 -> MISO
+  //port0.17 -> MOSI
+  //port0.18 -> SPCK
+  l_pPioA->PIO_PDR = BIT12 | BIT16 | BIT17 | BIT18;
+  l_pPioA->PIO_ASR = BIT12 | BIT16 | BIT17 | BIT18;
+  l_pPioA->PIO_BSR = 0;
+
+
+  //enable the clock of SPI
+  l_pPMC->PMC_PCER = 1 << AT91C_ID_SPI0;
+  //l_pPMC->PMC_PCER = 1 << 5;
+
+  // Fixed mode
+  l_pSpi->SPI_CR      = 0x81;               //SPI Enable, Software reset
+  l_pSpi->SPI_CR      = 0x01;               //SPI Enable
+
+
+  //l_pSpi->SPI_MR      = 0xE0099;           //Master mode, fixed select, disable decoder, FDIV=1 (NxMCK), PCS=1110, loopback
+  //l_pSpi->SPI_MR      = 0xE0019;            //Master mode, fixed select, disable decoder, FDIV=1 (NxMCK), PCS=1110,
+  //l_pSpi->SPI_MR      = 0xE0011;            //Master mode, fixed select, disable decoder, FDIV=0 (MCK), PCS=1110
+  l_pSpi->SPI_MR      = 0xE0019;            //Master mode, fixed select, disable decoder, FDIV=1 (MCK), PCS=1110
+
+  //l_pSpi->SPI_CSR[0]  = 0x4A02;           //8bit, CPOL=0, ClockPhase=1, SCLK = 200kHz
+  //l_pSpi->SPI_CSR[0]  = 0x4A13;           //9bit, CPOL=1, ClockPhase=1, SCLK = 200kHz
+  //l_pSpi->SPI_CSR[0]  = 0x4A12;           //9bit, CPOL=0, ClockPhase=1, SCLK = 200kHz
+  //l_pSpi->SPI_CSR[0]  = 0x4A11;           //9bit, CPOL=1, ClockPhase=0, SCLK = 200kHz
+  //l_pSpi->SPI_CSR[0]  = 0x01011F11;       //9bit, CPOL=1, ClockPhase=0, SCLK = 48Mhz/32*31 = 48kHz
+  //l_pSpi->SPI_CSR[0]  = 0x01010F11;       //9bit, CPOL=1, ClockPhase=0, SCLK = 48Mhz/32*15 = 96kHz
+  //l_pSpi->SPI_CSR[0]  = 0x01010C11;       //9bit, CPOL=1, ClockPhase=0, SCLK = 48Mhz/32*12 = 125kHz
+  l_pSpi->SPI_CSR[0]  = 0x01010211;   	//9bit, CPOL=1, ClockPhase=0, SCLK = 48Mhz/32* 2 = 750kHz
+  //l_pSpi->SPI_CSR[0]  = 0x01010111;		//9bit, CPOL=1, ClockPhase=0, SCLK = 48Mhz/32* 1 = 1500kHz
+
+  Delay_(1000);
+  // Custom Settings
+  // ====================
+
+    // Hardware reset
+    LCD_RESET_LOW;
+    Delay_(1000);
+    LCD_RESET_HIGH;
+    Delay_(1000);
+
+    // Display vontrol
+    WriteSpiCommand(DISCTL);
+  //  WriteSpiData(0x03); // no division
+  //  WriteSpiData(0x23); // 160 line
+  //  WriteSpiData(0x02); // 2 highlighte line
+    WriteSpiData(0x00); // default
+    WriteSpiData(0x20); // (32 + 1) * 4 = 132 lines (of which 130 are visible)
+    WriteSpiData(0x0a); // default
+
+    // COM scan
+    WriteSpiCommand(COMSCN);
+    WriteSpiData(0x00);  // Scan 1-80
+
+    // Internal oscilator ON
+    WriteSpiCommand(OSCON);
+
+    // wait aproximetly 100ms
+    Delay_(10000);
+
+    // Sleep out
+    WriteSpiCommand(SLPOUT);
+
+    // Voltage control
+    WriteSpiCommand(VOLCTR);
+    WriteSpiData(0x1F); // middle value of V1
+    WriteSpiData(0x03); // middle value of resistance value
+
+    // Temperature gradient
+    WriteSpiCommand(TMPGRD);
+    WriteSpiData(0x00); // default
+
+    // Power control
+    WriteSpiCommand(PWRCTR);
+    WriteSpiData(0x0f);   // referance voltage regulator on, circuit voltage follower on, BOOST ON
+
+    // Normal display
+    WriteSpiCommand(DISNOR);
+
+    // Inverse display
+    WriteSpiCommand(DISINV);
+
+    // Partial area off
+    WriteSpiCommand(PTLOUT);
+
+  //  // Scroll area set
+  //  WriteSpiCommand(ASCSET);
+  //  WriteSpiData(0);
+  //  WriteSpiData(0);
+  //  WriteSpiData(40);
+  //  WriteSpiData(3);
+
+  //  // Vertical scrool address start
+  //  WriteSpiCommand(SCSTART);
+  //  WriteSpiData(0);
+
+
+    // Data control
+    WriteSpiCommand(DATCTL);
+    WriteSpiData(0x00); // all inversions off, column direction
+    WriteSpiData(0x03); // RGB sequence
+    WriteSpiData(0x02); // Grayscale -> 16
+
+    // Page Address set
+    WriteSpiCommand(PASET);
+    WriteSpiData(0);
+    WriteSpiData(131);
+
+    // Page Column set
+    WriteSpiCommand(CASET);
+    WriteSpiData(0);
+    WriteSpiData(131);
+
+}
+
+
+void WriteSpiCommand(unsigned int data){
+
+  data = (data & ~0x0100);
+
+  // Wait for the transfer to complete
+  while((l_pSpi->SPI_SR & AT91C_SPI_TXEMPTY) == 0);
+
+  l_pSpi->SPI_TDR = data;
+}
+
+void WriteSpiData(unsigned int data){
+
+  data = (data | 0x0100);
+
+  // Wait for the transfer to complete
+  while((l_pSpi->SPI_SR & AT91C_SPI_TXEMPTY) == 0);
+
+  l_pSpi->SPI_TDR = data;
+}
+
+
+void Backlight(unsigned char state) {
+
+  if(state == BKLGHT_LCD_ON)
+    l_pPioB->PIO_SODR   = BIT20;    // Set PB20 to HIGH
+  else
+    l_pPioB->PIO_CODR   = BIT20;    // Set PB20 to LOW
+
+}
+
+void SetContrast(unsigned char contrast) {
+
+#ifdef GE12
+  WriteSpiCommand(CONTRAST);
+  WriteSpiData(0x20+contrast);    // contrast
+#else
+
+#endif
+
+}
+
+void LCDShowImage130x130(const unsigned char *img) {
+
+  // Display OFF
+  WriteSpiCommand(DISOFF);
+
+  // Page Address set
+  WriteSpiCommand(PASET);
+  WriteSpiData(0x00);
+  WriteSpiData(0x83);
+
+  // Page Column set
+  WriteSpiCommand(CASET);
+  WriteSpiData(0x00);
+  WriteSpiData(0x83);
+
+  // WRITE MEMORY
+  WriteSpiCommand(RAMWR);
+
+  for(j=0; j<25740; j++) //130*132*1.5
+  {
+    WriteSpiData(img[j]);
+    //WriteSpiData(0xFF);
+  }
+
+  // wait aproximetly 100ms
+  Delay_(10000);
+
+  // Display On
+  WriteSpiCommand(DISON);	
+}
+
+/*!************************************************************************
+ * \fn void LCD_ClearScreen(Color_t color)
+ * \param color Color to clear the screen
+ * \brief Clears the whole LCD screen using special color
+ *************************************************************************/
+void LCD_ClearScreen(Color_t color)
+{
+	U16 j;
+
+#ifdef GE12
+	/* Display OFF */
+	AT91F_SPI_WriteCommand( pSPI, LDS176_DISPOFF, 0 );
+
+	AT91F_SPI_WriteCommand( pSPI, LDS176_CASET, 0 );
+	AT91F_SPI_WriteData( pSPI, 0x01, 0 );
+	AT91F_SPI_WriteData( pSPI, 0x82, 0 );
+
+	AT91F_SPI_WriteCommand( pSPI, LDS176_RASET, 0 );
+	AT91F_SPI_WriteData( pSPI, 0x01, 0 );
+	AT91F_SPI_WriteData( pSPI, 0x82, 0 );
+
+	AT91F_SPI_WriteCommand( pSPI, LDS176_RAMWR, 0 );
+
+	for(j=0; j<132*65; j++)
+	{
+		LCDColor_t temp_color;
+		temp_color = color;
+		temp_color |= temp_color << 12;
+		AT91F_SPI_WriteData( pSPI, (temp_color >> 16) & 0xFF, 0 );
+		AT91F_SPI_WriteData( pSPI, (temp_color >> 8) & 0xFF, 0 );
+		AT91F_SPI_WriteData( pSPI, temp_color & 0xFF, 0 );
+	}
+
+	/* Display On */
+	AT91F_SPI_WriteCommand( pSPI, LDS176_DISPON, 0 );
+#endif
+
+#ifdef GE8
+
+	if (0) {
+	WriteSpiCommand(DISOFF);
+
+
+	// Page Address set
+	WriteSpiCommand(PASET);
+	WriteSpiData(0x00);
+	WriteSpiData(0x83);
+
+	// Page Column set
+	WriteSpiCommand(CASET);
+	WriteSpiData(0x00);
+	WriteSpiData(0x83);
+
+	// WRITE MEMORY
+	WriteSpiCommand(RAMWR);
+
+	for(j = 0; j < 134*65; j++) {
+		U32 temp_color;
+		temp_color = color;
+		temp_color |= temp_color << 12;
+		WriteSpiData((temp_color >> 16) & 0xFF);
+		WriteSpiData((temp_color >> 8) & 0xFF);
+		WriteSpiData(temp_color & 0xFF);
+	}
+
+	WriteSpiCommand(DISON);
+	}
+	else {
+
+#define LCD_SPI_CHANNEL 0
+	void * pSPI = AT91F_SPI_GetPeripheralAddress(LCD_SPI_CHANNEL);
+
+	  // Page Address set
+	  AT91F_SPI_WriteCommand(pSPI, PASET, LCD_SPI_CHANNEL);
+	  AT91F_SPI_WriteData(pSPI, 0x00, LCD_SPI_CHANNEL);
+	  AT91F_SPI_WriteData(pSPI, 0x82, LCD_SPI_CHANNEL);
+
+	  // Page Column set
+	  AT91F_SPI_WriteCommand(pSPI, CASET, LCD_SPI_CHANNEL);
+	  AT91F_SPI_WriteData(pSPI, 0x00, LCD_SPI_CHANNEL);
+	  AT91F_SPI_WriteData(pSPI, 0x82, LCD_SPI_CHANNEL);
+
+	  // WRITE MEMORY
+	  AT91F_SPI_WriteCommand(pSPI, RAMWR, LCD_SPI_CHANNEL);
+
+	  //for(j=0; j<sizeof(bmp)-396; j++) {
+	  for(j = 0; j < 132*65; j++) {
+			U32 temp_color;
+			temp_color = color;
+			temp_color |= temp_color << 12;
+			AT91F_SPI_WriteData( pSPI, (temp_color >> 16) & 0xFF, 0 );
+			AT91F_SPI_WriteData( pSPI, (temp_color >> 8) & 0xFF, 0 );
+			AT91F_SPI_WriteData( pSPI, temp_color & 0xFF, 0 );
+	  }
+
+	  AT91F_SPI_WriteCommand( pSPI, DISON, LCD_SPI_CHANNEL);
+	  //AT91F_SPI_WriteCommand( pSPI, NOP, LCD_SPI_CHANNEL);
+
+	}
+#endif
+
+}
+
+
+
+/*!************************************************************************
+ * \fn void LCD_WriteChar(	U8 Ascii, \
+ * 							struct font_description * font, \
+ * 							U8 xb, \
+ * 							U8 yb, \
+ * 							U16 FG_Color, U16 BG_Color)
+ * \param Ascii   Character which should be displayed
+ * \param font    font_digits[] table.
+ * \param xb      horizontal begin pixel position
+ * \param xe      horizontal end pixel position
+ * \param yb      vertical begin pixel position
+ * \param ye      vertical end pixel position
+ * \param FG_Color    Foreground colour - 12 bits. The most significant nibble is set to '0'
+ * \param BG_Color Background colour - 12 bits. The most significant nibble is set to '0'
+ * \brief   Displays a symbol on the LCD with specified font, coordinates and color
+ *************************************************************************/
+void LCD_WriteChar(U8 Ascii, struct font_description * font, U8 xb, U8 yb, U16 FG_Color, U16 BG_Color)
+{
+	U8	Byte_1 = 0, Byte_2 = 0, Byte_3 = 0, Pixel = 0;
+	U16	i, j;
+	void * pSPI = AT91F_SPI_GetPeripheralAddress( 0 );
+
+#ifdef GE12
+	AT91F_SPI_WriteCommand( pSPI, LDS176_CASET, 0 );
+#endif
+#ifdef GE8
+	  AT91F_SPI_WriteCommand(pSPI, 0x15/*CASET*/, LCD_SPI_CHANNEL);
+#endif
+	AT91F_SPI_WriteData( pSPI, xb, 0 );
+	AT91F_SPI_WriteData( pSPI, xb + font->font_width - 1, 0 );
+
+#ifdef GE12
+	AT91F_SPI_WriteCommand( pSPI, LDS176_RASET, 0 );
+#endif
+#ifdef GE8
+	  AT91F_SPI_WriteCommand(pSPI, 0x75/*PASET*/, LCD_SPI_CHANNEL);
+#endif
+	AT91F_SPI_WriteData( pSPI, yb, 0 );
+	AT91F_SPI_WriteData( pSPI, yb + font->font_height - 1, 0 );
+
+#ifdef GE12
+	AT91F_SPI_WriteCommand( pSPI, LDS176_RAMWR, 0 );
+#endif
+#ifdef GE8
+	  AT91F_SPI_WriteCommand(pSPI, 0x5C/*RAMWR*/, LCD_SPI_CHANNEL);
+#endif
+
+	for( j = 0; j < font->font_height; j++ ) {
+		Pixel = font->font_data_ptr[ j + ( font->font_height * Ascii ) ];
+		for( i = 0; i < font->font_width; i++ )
+		{
+			/* Use 3 bytes to present 2 pixels (even and odd addresses) */
+			if( i % 2 )
+			{
+			    if( Pixel & 0x80 )      /* Pixel ON */
+			    {
+			        Byte_2 &= 0xF0;
+			        Byte_2 |= FG_Color >> 8;
+			        Byte_3 = FG_Color & 0x00FF;
+			    }
+			    else                /* Pixel OFF */
+			    {
+			        Byte_2 &= 0xF0;
+			        Byte_2 |= BG_Color >> 8;
+			        Byte_3 =  BG_Color & 0x00FF;
+			    }
+			    AT91F_SPI_WriteData( pSPI, Byte_1, 0 );
+			    AT91F_SPI_WriteData( pSPI, Byte_2, 0 );
+			    AT91F_SPI_WriteData( pSPI, Byte_3, 0 );
+			}
+			else
+			{
+			    if( Pixel & 0x80 )      /* Pixel ON */
+			    {
+			        Byte_1 = FG_Color >> 4;
+			        Byte_2 = FG_Color << 4;
+			    }
+			    else                /* Pixel OFF */
+		        {
+		            Byte_1 = BG_Color >> 4;
+		            Byte_2 = BG_Color << 4;
+/*		            Byte_2 = 0;
+		            Byte_2 |= BG_Color << 4;
+*/		        }
+		    }
+		    Pixel <<= 1;
+		}
+	}
+
+#ifdef GE12
+	AT91F_SPI_WriteCommand( pSPI, LDS176_NOP, LCD_SPI_CHANNEL);
+#endif
+#ifdef GE8
+	AT91F_SPI_WriteCommand( pSPI, 0x25/*NOP*/, LCD_SPI_CHANNEL);
+#endif
+
+}
+
+/*!************************************************************************
+ * \fn void LCDWriteString(const S8 * pString,\
+ * 							struct font_description * font, \
+ * 							Coordinate_t xb, Coordinate_t xe, \
+ * 							Color_t FG_Color, Color_t BG_Color)
+ * \param Ascii   Characters which should be displayed
+ * \param font    font_digits[] table.
+ * \param xb      horizontal begin pixel position
+ * \param xe      horizontal end pixel position
+ * \param FG_Color    Foreground colour - 12 bits. The most significant nibble is set to '0'
+ * \param BG_Color Background colour - 12 bits. The most significant nibble is set to '0'
+ * \brief   Displays a string on LCD with specified font, coordinates and color
+ *************************************************************************/
+void LCD_WriteString(	char *pString, struct font_description *font,
+						Coordinate_t xb, Coordinate_t yb, Color_t FG_Colour, Color_t BG_Colour)
+{
+	S8 * pStr = (S8 *) pString;
+	Coordinate_t _x;
+
+	_x = xb;
+
+	while ( *pStr )
+	{
+		LCD_WriteChar( *pStr, font, _x, yb, FG_Colour, BG_Colour);
+		pStr ++;
+		_x += font->font_width;
+	}
+}

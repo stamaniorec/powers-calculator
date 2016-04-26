@@ -1,0 +1,94 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (Libraryes), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(AT91SAM7),0,0,0
+GRPOPT 2,(SAM7EX256),0,0,0
+GRPOPT 3,(LCDGE8),0,0,0
+GRPOPT 4,(ADC),0,0,0
+GRPOPT 5,(RTT),0,0,0
+
+OPTFFF 1,1,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_adc.c><lib_at91sam7_adc.c> 
+OPTFFF 1,2,1,218103808,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_aic.c><lib_at91sam7_aic.c> 
+OPTFFF 1,3,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_can.c><lib_at91sam7_can.c> 
+OPTFFF 1,4,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_dbgu.c><lib_at91sam7_dbgu.c> 
+OPTFFF 1,5,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_emac.c><lib_at91sam7_emac.c> 
+OPTFFF 1,6,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_mc.c><lib_at91sam7_mc.c> 
+OPTFFF 1,7,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pdc.c><lib_at91sam7_pdc.c> 
+OPTFFF 1,8,1,805306368,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pio.c><lib_at91sam7_pio.c> 
+OPTFFF 1,9,1,855638016,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pitc.c><lib_at91sam7_pitc.c> 
+OPTFFF 1,10,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pmc.c><lib_at91sam7_pmc.c> 
+OPTFFF 1,11,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pwmc.c><lib_at91sam7_pwmc.c> 
+OPTFFF 1,12,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_rstc.c><lib_at91sam7_rstc.c> 
+OPTFFF 1,13,1,436207616,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_rttc.c><lib_at91sam7_rttc.c> 
+OPTFFF 1,14,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_spi.c><lib_at91sam7_spi.c> 
+OPTFFF 1,15,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_ssc.c><lib_at91sam7_ssc.c> 
+OPTFFF 1,16,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_tc.c><lib_at91sam7_tc.c> 
+OPTFFF 1,17,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_twi.c><lib_at91sam7_twi.c> 
+OPTFFF 1,18,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_udp.c><lib_at91sam7_udp.c> 
+OPTFFF 1,19,1,0,0,288,304,0,<.\LIB_AT91SAM7\lib_at91sam7_usart.c><lib_at91sam7_usart.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,198,0,0,0,198,0,0,0,250,3,0,0,254,2,0,0 }
+OPTFFF 1,20,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_vreg.c><lib_at91sam7_vreg.c> 
+OPTFFF 1,21,1,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_wdtc.c><lib_at91sam7_wdtc.c> 
+OPTFFF 1,22,1,0,0,0,0,0,<.\LIB_AT91SAM7\lowlevelinit.c><lowlevelinit.c> 
+OPTFFF 1,23,5,0,0,0,0,0,<.\LIB_AT91SAM7\basedef.h><basedef.h> 
+OPTFFF 1,24,5,0,0,0,0,0,<.\LIB_AT91SAM7\ioat91sam7x256.h><ioat91sam7x256.h> 
+OPTFFF 1,25,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7.h><lib_at91sam7.h> 
+OPTFFF 1,26,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_adc.h><lib_at91sam7_adc.h> 
+OPTFFF 1,27,5,671088640,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_aic.h><lib_at91sam7_aic.h> 
+OPTFFF 1,28,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_can.h><lib_at91sam7_can.h> 
+OPTFFF 1,29,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_dbgu.h><lib_at91sam7_dbgu.h> 
+OPTFFF 1,30,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_emac.h><lib_at91sam7_emac.h> 
+OPTFFF 1,31,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_mc.h><lib_at91sam7_mc.h> 
+OPTFFF 1,32,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pdc.h><lib_at91sam7_pdc.h> 
+OPTFFF 1,33,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pio.h><lib_at91sam7_pio.h> 
+OPTFFF 1,34,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pitc.h><lib_at91sam7_pitc.h> 
+OPTFFF 1,35,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pmc.h><lib_at91sam7_pmc.h> 
+OPTFFF 1,36,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_pwmc.h><lib_at91sam7_pwmc.h> 
+OPTFFF 1,37,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_rstc.h><lib_at91sam7_rstc.h> 
+OPTFFF 1,38,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_rttc.h><lib_at91sam7_rttc.h> 
+OPTFFF 1,39,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_spi.h><lib_at91sam7_spi.h> 
+OPTFFF 1,40,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_ssc.h><lib_at91sam7_ssc.h> 
+OPTFFF 1,41,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_tc.h><lib_at91sam7_tc.h> 
+OPTFFF 1,42,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_twi.h><lib_at91sam7_twi.h> 
+OPTFFF 1,43,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_udp.h><lib_at91sam7_udp.h> 
+OPTFFF 1,44,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_usart.h><lib_at91sam7_usart.h> 
+OPTFFF 1,45,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_vreg.h><lib_at91sam7_vreg.h> 
+OPTFFF 1,46,5,0,0,0,0,0,<.\LIB_AT91SAM7\lib_at91sam7_wdtc.h><lib_at91sam7_wdtc.h> 
+OPTFFF 2,47,1,973078528,0,0,0,0,<.\LIB_SAM7EX256\board.c><board.c> 
+OPTFFF 3,48,1,0,0,0,0,0,<.\LIB_LCDGE8\fixedsys.c><fixedsys.c> 
+OPTFFF 3,49,1,0,0,0,0,0,<.\LIB_LCDGE8\lcd_GE8.c><lcd_GE8.c> 
+OPTFFF 4,50,1,0,0,0,0,0,<.\LIB_ADC\adc.c><adc.c> 
+OPTFFF 5,51,1,0,0,0,0,0,<.\LIB_RTT\RTT.c><RTT.c> 
+OPTFFF 5,52,5,436207616,0,0,0,0,<.\LIB_RTT\RTT.h><RTT.h> 
+
+ExtF <C:\embedded\VMKS2015\KeilProject_v0.02\P08_CmdUART.Map> 1,1,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,50,0,0,0,50,0,0,0,23,4,0,0,64,1,0,0 }
+ExtF <C:\embedded\VMKS2015\KeilProject_v0.02\P07_LoopUART.Map> 4,4,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,100,0,0,0,100,0,0,0,77,4,0,0,118,1,0,0 }
+ExtF <C:\embedded\VMKS2015\KeilProject_v0.02\P01_MyEmpty.Map> 1,1,0,{ 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,25,0,0,0,25,0,0,0,2,4,0,0,43,1,0,0 }
+ExtF <C:\embedded\VMKS2015\KeilProject_v0.02\P01_MyEmpty_UART.Map> 1,7,0,{ 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,248,255,255,255,226,255,255,255,50,0,0,0,50,0,0,0,27,4,0,0,68,1,0,0 }
+
+TARGOPT 1, (Libraryes)
+ ADSCLK=18432000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (SARM.DLL)(-cAT91SAM7X)(DARMATS.DLL)(-p91SAM7X256)(SARM.DLL)()(TARMATS.DLL)(-p91SAM7X256)
+  OPTDBG 48125,6,()()()()()()()()()() (Segger\JLTAgdi.dll)()()()
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

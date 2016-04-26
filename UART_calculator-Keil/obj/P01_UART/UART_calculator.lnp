@@ -1,0 +1,4 @@
+--device DARMATS ".\obj\p01_uart\sam7.o" ".\obj\LIB_AT91SAM7.lib" ".\obj\p01_uart\uart_calculator.o" --library_type=microlib --strict --scatter ".\obj\P01_UART\UART_calculator.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\UART_calculator.map" -o ".\obj\P01_UART\UART_calculator.axf"

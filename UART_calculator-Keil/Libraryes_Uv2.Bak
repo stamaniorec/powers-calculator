@@ -1,0 +1,155 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+Target (Libraryes), 0x0004 // Tools: 'ARM-ADS'
+
+Group (AT91SAM7)
+Group (SAM7EX256)
+Group (LCDGE8)
+Group (ADC)
+Group (RTT)
+
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_adc.c><lib_at91sam7_adc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_aic.c><lib_at91sam7_aic.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_can.c><lib_at91sam7_can.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_dbgu.c><lib_at91sam7_dbgu.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_emac.c><lib_at91sam7_emac.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_mc.c><lib_at91sam7_mc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_pdc.c><lib_at91sam7_pdc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_pio.c><lib_at91sam7_pio.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_pitc.c><lib_at91sam7_pitc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_pmc.c><lib_at91sam7_pmc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_pwmc.c><lib_at91sam7_pwmc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_rstc.c><lib_at91sam7_rstc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_rttc.c><lib_at91sam7_rttc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_spi.c><lib_at91sam7_spi.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_ssc.c><lib_at91sam7_ssc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_tc.c><lib_at91sam7_tc.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_twi.c><lib_at91sam7_twi.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_udp.c><lib_at91sam7_udp.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_usart.c><lib_at91sam7_usart.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_vreg.c><lib_at91sam7_vreg.c>
+File 1,1,<.\LIB_AT91SAM7\lib_at91sam7_wdtc.c><lib_at91sam7_wdtc.c>
+File 1,1,<.\LIB_AT91SAM7\lowlevelinit.c><lowlevelinit.c>
+File 1,5,<.\LIB_AT91SAM7\basedef.h><basedef.h>
+File 1,5,<.\LIB_AT91SAM7\ioat91sam7x256.h><ioat91sam7x256.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7.h><lib_at91sam7.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_adc.h><lib_at91sam7_adc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_aic.h><lib_at91sam7_aic.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_can.h><lib_at91sam7_can.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_dbgu.h><lib_at91sam7_dbgu.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_emac.h><lib_at91sam7_emac.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_mc.h><lib_at91sam7_mc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_pdc.h><lib_at91sam7_pdc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_pio.h><lib_at91sam7_pio.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_pitc.h><lib_at91sam7_pitc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_pmc.h><lib_at91sam7_pmc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_pwmc.h><lib_at91sam7_pwmc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_rstc.h><lib_at91sam7_rstc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_rttc.h><lib_at91sam7_rttc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_spi.h><lib_at91sam7_spi.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_ssc.h><lib_at91sam7_ssc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_tc.h><lib_at91sam7_tc.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_twi.h><lib_at91sam7_twi.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_udp.h><lib_at91sam7_udp.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_usart.h><lib_at91sam7_usart.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_vreg.h><lib_at91sam7_vreg.h>
+File 1,5,<.\LIB_AT91SAM7\lib_at91sam7_wdtc.h><lib_at91sam7_wdtc.h>
+File 2,1,<.\LIB_SAM7EX256\board.c><board.c>
+File 3,1,<.\LIB_LCDGE8\fixedsys.c><fixedsys.c>
+File 3,1,<.\LIB_LCDGE8\lcd_GE8.c><lcd_GE8.c>
+File 4,1,<.\LIB_ADC\adc.c><adc.c>
+File 5,1,<.\LIB_RTT\RTT.c><RTT.c>
+File 5,5,<.\LIB_RTT\RTT.h><RTT.h>
+
+
+Options 1,0,0  // Target 'Libraryes'
+ Device (AT91SAM7X256)
+ Vendor (Atmel)
+ Cpu (IRAM(0x200000-0x20FFFF) IROM(0x100000-0x13FFFF) CLOCK(18432000) CPUTYPE(ARM7TDMI))
+ FlashUt ()
+ StupF ("STARTUP\Atmel\SAM7.s" ("Atmel AT91SAM7 Startup Code"))
+ FlashDR (UL2ARM(-U56240812 -O15 -S0 -C0 -FO7 -FD200000 -FC800 -FN1 -FF0AT91SAM7_256 -FS0100000 -FL040000))
+ DevID (4081)
+ Rgf (AT91SAM7X256.H)
+ Mem ()
+ C ()
+ A ()
+ RL ()
+ OH ()
+ DBC_IFX ()
+ DBC_CMS ()
+ DBC_AMS ()
+ DBC_LMS ()
+ UseEnv=0
+ EnvBin ()
+ EnvInc ()
+ EnvLib ()
+ EnvReg (Atmel\SAM7X\)
+ OrgReg (Atmel\SAM7X\)
+ TgStat=16
+ OutDir (.\obj\)
+ OutName (LIB_AT91SAM7)
+ GenApp=0
+ GenLib=1
+ GenHex=0
+ Debug=1
+ Browse=1
+ LstDir (.\)
+ HexSel=1
+ MG32K=0
+ TGMORE=8
+ RunUsr 0 0 <>
+ RunUsr 1 0 <>
+ BrunUsr 0 0 <>
+ BrunUsr 1 0 <>
+ CrunUsr 0 0 <>
+ CrunUsr 1 0 <>
+ SVCSID <>
+ GLFLAGS=1790
+ ADSFLGA { 243,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ACPUTYP (ARM7TDMI)
+ RVDEV ()
+ ADSTFLGA { 0,12,0,2,99,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSOCM { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSIRAM { 0,0,0,32,0,0,0,1,0 }
+ OCMADSIROM { 1,0,0,16,0,0,0,4,0 }
+ OCMADSXRAM { 0,0,0,0,0,0,0,0,0 }
+ OCR_RVCT { 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,16,0,0,0,4,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,0,1,0,0,0,0,0,0,0,0,0,0 }
+ RV_STAVEC ()
+ ADSCCFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSCMISC ()
+ ADSCDEFN ()
+ ADSCUDEF ()
+ ADSCINCD (.\LIB_AT91SAM7;.\LIB_SAM7EX256;.\LIB_LCDGE8;.\LIB_ADC;.\LIB_RTT)
+ ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSAMISC ()
+ ADSADEFN ()
+ ADSAUDEF ()
+ ADSAINCD ()
+ PropFld { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ IncBld=1
+ AlwaysBuild=0
+ GenAsm=0
+ AsmAsm=0
+ PublicsOnly=0
+ StopCode=3
+ CustArgs ()
+ LibMods ()
+ ADSLDFG { 16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSLDTA (0x00100000)
+ ADSLDDA (0x00200000)
+ ADSLDSC ()
+ ADSLDIB ()
+ ADSLDIC ()
+ ADSLDMC ()
+ ADSLDIF ()
+ ADSLDDW ()
+  OPTDL (SARM.DLL)(-cAT91SAM7X)(DARMATS.DLL)(-p91SAM7X256)(SARM.DLL)()(TARMATS.DLL)(-p91SAM7X256)
+  OPTDBG 48125,0,()()()()()()()()()() (BIN\UL2ARM.DLL)()()()
+ FLASH1 { 9,0,0,0,1,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0 }
+ FLASH2 (BIN\UL2ARM.DLL)
+ FLASH3 ("" ())
+ FLASH4 ()
+EndOpt
+

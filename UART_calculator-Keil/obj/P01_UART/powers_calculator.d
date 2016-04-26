@@ -1,0 +1,10 @@
+.\obj\P01_UART\powers_calculator.o: UART_calculator\powers_calculator.c
+.\obj\P01_UART\powers_calculator.o: C:\embedded\VMKS2015\Keil3.80a\ARM\RV31\INC\stdio.h
+.\obj\P01_UART\powers_calculator.o: C:\embedded\VMKS2015\Keil3.80a\ARM\RV31\INC\stdlib.h
+.\obj\P01_UART\powers_calculator.o: C:\embedded\VMKS2015\Keil3.80a\ARM\RV31\INC\string.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\utils.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\string_t.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\exponentiated_number.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\validation_and_formatting.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\evaluation.h
+.\obj\P01_UART\powers_calculator.o: UART_calculator\newton_method.h

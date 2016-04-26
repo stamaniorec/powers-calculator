@@ -1,0 +1,26 @@
+
+T0BC0 000:491 SEGGER J-Link V4.80f Log File (0001ms, 0339ms total)
+T0BC0 000:491 DLL Compiled: Feb  5 2014 10:36:54 (0001ms, 0339ms total)
+T0BC0 000:491 Logging started @ 2016-04-24 12:41 (0001ms, 0339ms total)
+T0BC0 000:492 JLINK_SetWarnOutHandler(...) (0000ms, 0339ms total)
+T0BC0 000:492 JLINK_OpenEx(...)
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+S/N: 268006010
+OEM: SEGGER-EDU
+Feature(s): FlashBP, GDB  returns O.K. (0286ms, 0625ms total)
+T0BC0 000:778 JLINK_SetErrorOutHandler(...) (0000ms, 0625ms total)
+T0BC0 000:778 JLINK_TIF_Select(JLINKARM_TIF_JTAG)  returns 0x00 (0030ms, 0655ms total)
+T0BC0 000:808 JLINK_SetSpeed(2000) (0002ms, 0657ms total)
+T0BC0 000:810 JLINK_GetHardwareVersion()  returns 0x13880 (0000ms, 0657ms total)
+T0BC0 000:810 JLINK_GetDLLVersion()  returns 48006 (0000ms, 0657ms total)
+T0BC0 000:813 JLINK_GetDLLVersion()  returns 48006 (0000ms, 0657ms total)
+T0BC0 000:813 JLINK_GetCompileDateTime() (0000ms, 0657ms total)
+T0BC0 000:814 JLINK_GetFirmwareString(...) (0000ms, 0657ms total)
+T0BC0 000:816 JLINK_GetHardwareVersion()  returns 0x13880 (0000ms, 0657ms total)
+T0BC0 000:821 JLINK_GetIdData(...) >0x2F8 JTAG>TotalIRLen = 4, IRPrint = 0x01 >0x30 JTAG> >0x210 JTAG> >0x58 JTAG> >0x58 JTAG> >0x18 JTAG> >0x50 JTAG> ScanLen=4 NumDevices=1 aId[0]=0x3F0F0F0F aIrRead[0]=0 aScanLen[0]=4 aScanRead[0]=0 (0022ms, 0679ms total)
+T0BC0 000:843 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)  returns 0x3F0F0F0F (0000ms, 0679ms total)
+T0BC0 000:843 JLINK_JTAG_GetDeviceInfo(DeviceIndex = 0)  returns 0x00 (0000ms, 0679ms total)
+T0BC0 004:599 JLINK_Close() >0x08 JTAG> (0022ms, 0701ms total)
+T0BC0 004:599  (0022ms, 0701ms total)
+T0BC0 004:599 Closed (0022ms, 0701ms total)

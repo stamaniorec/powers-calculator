@@ -1,0 +1,21 @@
+*** Creating Trace Output File '.\obj\P01_UART\P01_MyEmpty_UART.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\p01_uart\sam7.o"'
+### List of Objects: adding '".\obj\p01_uart\myempty_uart.o"'
+### List of Objects: adding '".\obj\LIB_AT91SAM7.lib"'
+### ADS-LD Command completed:
+--device DARMATS ".\obj\p01_uart\sam7.o" ".\obj\p01_uart\myempty_uart.o" ".\obj\LIB_AT91SAM7.lib" --library_type=microlib --strict --scatter ".\obj\P01_UART\P01_MyEmpty_UART.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\P01_MyEmpty_UART.map" -o ".\obj\P01_UART\P01_MyEmpty_UART.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\P01_UART\P01_MyEmpty_UART.axf'
+### ADS-LD Command File: '.\obj\P01_UART\P01_MyEmpty_UART.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\P01_UART\P01_MyEmpty_UART.lnp', Handle=0x00001B18
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\P01_UART\P01_MyEmpty_UART.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

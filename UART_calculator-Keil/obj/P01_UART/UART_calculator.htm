@@ -1,0 +1,768 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\obj\P01_UART\UART_calculator.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\obj\P01_UART\UART_calculator.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 524]: Last Updated: Mon Apr 25 15:36:42 2016
+<BR><P>
+<H3>Maximum Stack Usage =        144 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; printExpr &rArr; LCD_WriteString &rArr; LCD_WriteChar
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[1f77658]">Reset_Handler</a>
+ <LI><a href="#[1f778b0]">Undef_Handler</a>
+ <LI><a href="#[1f77874]">SWI_Handler</a>
+ <LI><a href="#[1f77838]">PAbt_Handler</a>
+ <LI><a href="#[1f777fc]">DAbt_Handler</a>
+ <LI><a href="#[1f777c0]">IRQ_Handler</a>
+ <LI><a href="#[1f77784]">FIQ_Handler</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1f778b0]">Undef_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f778b0]">Undef_Handler</a><BR>
+ <LI><a href="#[1f77874]">SWI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f77874]">SWI_Handler</a><BR>
+ <LI><a href="#[1f77838]">PAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f77838]">PAbt_Handler</a><BR>
+ <LI><a href="#[1f777fc]">DAbt_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f777fc]">DAbt_Handler</a><BR>
+ <LI><a href="#[1f777c0]">IRQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f777c0]">IRQ_Handler</a><BR>
+ <LI><a href="#[1f77784]">FIQ_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1f77784]">FIQ_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1f77658]">Reset_Handler</a>
+ <LI><a href="#[1f778b0]">Undef_Handler</a>
+ <LI><a href="#[1f77874]">SWI_Handler</a>
+ <LI><a href="#[1f77838]">PAbt_Handler</a>
+ <LI><a href="#[1f777fc]">DAbt_Handler</a>
+ <LI><a href="#[1f777c0]">IRQ_Handler</a>
+ <LI><a href="#[1f77784]">FIQ_Handler</a>
+ <LI><a href="#[1f70d1c]">__main</a>
+ <LI><a href="#[1f7626c]">main</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[1f77658]"></a>Reset_Handler</STRONG> (ARM, 0 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f70d1c]"></a>__main</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+
+<P><STRONG><a name="[1f707f4]"></a>_main_stk</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[1f70704]"></a>_main_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[1f70434]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f706c8]"></a>__main_after_scatterload</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70434]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f705d8]"></a>_main_init</STRONG> (ARM, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[1f76488]"></a>Delay</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, uart_calculator.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7644c]"></a>f_red</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, uart_calculator.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f76410]"></a>f_green</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, uart_calculator.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f763d4]"></a>f_blue</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, uart_calculator.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f76398]"></a>f_yellow</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, uart_calculator.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f7635c]"></a>UART_PutChar</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, uart_calculator.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UART_PutChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f75fd8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_TxReady (via Veneer)
+<LI><a href="#[1f76050]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_PutChar (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f76320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WriteString
+</UL>
+
+<P><STRONG><a name="[1f76320]"></a>UART_WriteString</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, uart_calculator.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UART_WriteString &rArr; UART_PutChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f70920]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[1f7635c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_PutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1f762e4]"></a>UART_ReadString</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, uart_calculator.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = UART_ReadString
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f76014]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_RxReady (via Veneer)
+<LI><a href="#[1f7608c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_GetChar (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1f762a8]"></a>printExpr</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, uart_calculator.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = printExpr &rArr; LCD_WriteString &rArr; LCD_WriteChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f75ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteString (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1f7626c]"></a>main</STRONG> (Thumb, 112 bytes, Stack size 24 bytes, uart_calculator.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = main &rArr; printExpr &rArr; LCD_WriteString &rArr; LCD_WriteChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen (via Veneer)
+<LI><a href="#[1f75f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLCD (via Veneer)
+<LI><a href="#[1f760c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_EnableTx (via Veneer)
+<LI><a href="#[1f76104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_EnableRx (via Veneer)
+<LI><a href="#[1f76140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Configure (via Veneer)
+<LI><a href="#[1f7617c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US1_CfgPMC (via Veneer)
+<LI><a href="#[1f761b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US1_CfgPIO (via Veneer)
+<LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock (via Veneer)
+<LI><a href="#[1f76230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_LowLevel_Init (via Veneer)
+<LI><a href="#[1f762a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printExpr
+<LI><a href="#[1f762e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReadString
+<LI><a href="#[1f76320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WriteString
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[1f756b4]"></a>AT91F_PMC_CfgSysClkEnableRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75678]"></a>AT91F_PMC_CfgSysClkDisableRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7563c]"></a>AT91F_PMC_GetSysClkStatusRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f761f4]"></a>AT91F_PMC_EnablePeripheralClock</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70e0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_Init
+<LI><a href="#[1f70ec0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI0_CfgPMC
+<LI><a href="#[1f70f38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI1_CfgPMC
+<LI><a href="#[1f71820]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIOB_CfgPMC
+<LI><a href="#[1f7185c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIOA_CfgPMC
+<LI><a href="#[1f74700]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US0_CfgPMC
+<LI><a href="#[1f7617c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US1_CfgPMC
+<LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f75600]"></a>AT91F_PMC_DisablePeripheralClock</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f755c4]"></a>AT91F_PMC_GetPeripheralClock</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75588]"></a>AT91F_CKGR_CfgMainOscillatorRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7554c]"></a>AT91F_CKGR_GetMainOscillatorRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75510]"></a>AT91F_CKGR_EnableMainOscillator</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f754d4]"></a>AT91F_CKGR_DisableMainOscillator</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75498]"></a>AT91F_CKGR_CfgMainOscStartUpTime</STRONG> (ARM, 52 bytes, Stack size 8 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f70a10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f7545c]"></a>AT91F_CKGR_GetMainClockFreqRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75420]"></a>AT91F_CKGR_GetMainClock</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f753e4]"></a>AT91F_PMC_CfgMCKRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f753a8]"></a>AT91F_PMC_GetMCKRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7536c]"></a>AT91F_PMC_GetMasterClock</STRONG> (ARM, 148 bytes, Stack size 16 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f70a10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f75330]"></a>AT91F_PMC_EnablePCK</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f752f4]"></a>AT91F_PMC_DisablePCK</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f752b8]"></a>AT91F_PMC_EnableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7527c]"></a>AT91F_PMC_DisableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75240]"></a>AT91F_PMC_GetStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75204]"></a>AT91F_PMC_GetInterruptMaskStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f751c8]"></a>AT91F_PMC_IsInterruptMasked</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7518c]"></a>AT91F_PMC_IsStatusSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75150]"></a>AT91F_CKGR_CfgPLLRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f75114]"></a>AT91F_CKGR_GetPLLRegister</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f750d8]"></a>AT91F_PMC_CfgPMC</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7509c]"></a>AT91F_PMC_CfgPIO</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lib_at91sam7_pmc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIO_CfgPeripheral
+</UL>
+
+<P><STRONG><a name="[1f75060]"></a>AT91F_PMC_GetPeripheralAddress</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pmc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f76230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_LowLevel_Init
+</UL>
+
+<P><STRONG><a name="[1f74a48]"></a>AT91F_US_Baudrate</STRONG> (ARM, 44 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = AT91F_US_Baudrate &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f70a10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f74a0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_SetBaudrate
+<LI><a href="#[1f76140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Configure
+</UL>
+
+<P><STRONG><a name="[1f74a0c]"></a>AT91F_US_SetBaudrate</STRONG> (ARM, 32 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f74a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Baudrate
+</UL>
+
+<P><STRONG><a name="[1f749d0]"></a>AT91F_US_SetTimeguard</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f74994]"></a>AT91F_US_EnableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f74958]"></a>AT91F_US_DisableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f76140]"></a>AT91F_US_Configure</STRONG> (ARM, 72 bytes, Stack size 16 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = AT91F_US_Configure &rArr; AT91F_US_Baudrate &rArr; __aeabi_uidivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f745d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_Open
+<LI><a href="#[1f74a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Baudrate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f76104]"></a>AT91F_US_EnableRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f760c8]"></a>AT91F_US_EnableTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f7491c]"></a>AT91F_US_ResetRx</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f748e0]"></a>AT91F_US_ResetTx</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f748a4]"></a>AT91F_US_DisableRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f74868]"></a>AT91F_US_DisableTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7482c]"></a>AT91F_US_Close</STRONG> (ARM, 56 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f74610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_Close
+</UL>
+
+<P><STRONG><a name="[1f75fd8]"></a>AT91F_US_TxReady</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f7635c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_PutChar (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f76014]"></a>AT91F_US_RxReady</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f762e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReadString (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f747f0]"></a>AT91F_US_Error</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f76050]"></a>AT91F_US_PutChar</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f7635c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_PutChar (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f7608c]"></a>AT91F_US_GetChar</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f762e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReadString (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f747b4]"></a>AT91F_US_SendFrame</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f7455c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_SendFrame
+</UL>
+
+<P><STRONG><a name="[1f74778]"></a>AT91F_US_ReceiveFrame</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f74598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_ReceiveFrame
+</UL>
+
+<P><STRONG><a name="[1f7473c]"></a>AT91F_US_SetIrdaFilter</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7617c]"></a>AT91F_US1_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f761b8]"></a>AT91F_US1_CfgPIO</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lib_at91sam7_usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = AT91F_US1_CfgPIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f75024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIO_CfgPeripheral
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f74700]"></a>AT91F_US0_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f746c4]"></a>AT91F_US0_CfgPIO</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIO_CfgPeripheral
+</UL>
+
+<P><STRONG><a name="[1f74688]"></a>AT91F_USART_PDC_GetPeripheralAddress</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7464c]"></a>AT91F_USART_GetChannelAddress</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lib_at91sam7_usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f76230]"></a>AT91F_LowLevel_Init</STRONG> (ARM, 96 bytes, Stack size 8 bytes, lowlevelinit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = AT91F_LowLevel_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f75060]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_GetPeripheralAddress
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f73f08]"></a>AT91F_Finalize_Init</STRONG> (ARM, 24 bytes, Stack size 0 bytes, lowlevelinit.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f73080]"></a>Delaya</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f73080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delaya
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f73080]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delaya
+</UL>
+
+<P><STRONG><a name="[1f73044]"></a>Delay_</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f73044]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f73044]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_
+</UL>
+
+<P><STRONG><a name="[1f73008]"></a>WriteSpiData</STRONG> (ARM, 32 bytes, Stack size 0 bytes, lcd_ge8.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f72e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetRect
+<LI><a href="#[1f72edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetPixel
+<LI><a href="#[1f72f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowImage130x130
+<LI><a href="#[1f75f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLCD
+</UL>
+
+<P><STRONG><a name="[1f72fcc]"></a>WriteSpiCommand</STRONG> (ARM, 32 bytes, Stack size 0 bytes, lcd_ge8.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f72e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetRect
+<LI><a href="#[1f72edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetPixel
+<LI><a href="#[1f72f18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowImage130x130
+<LI><a href="#[1f75f60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLCD
+</UL>
+
+<P><STRONG><a name="[1f75f60]"></a>InitLCD</STRONG> (ARM, 396 bytes, Stack size 4 bytes, lcd_ge8.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = InitLCD
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f72fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiCommand
+<LI><a href="#[1f73008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f72f90]"></a>Backlight</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lcd_ge8.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72f54]"></a>SetContrast</STRONG> (ARM, 4 bytes, Stack size 0 bytes, lcd_ge8.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72f18]"></a>LCDShowImage130x130</STRONG> (ARM, 140 bytes, Stack size 8 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiCommand
+<LI><a href="#[1f73008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiData
+</UL>
+
+<P><STRONG><a name="[1f75f24]"></a>LCD_ClearScreen</STRONG> (ARM, 232 bytes, Stack size 32 bytes, lcd_ge8.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = LCD_ClearScreen
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f72d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteData
+<LI><a href="#[1f72d74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteCommand
+<LI><a href="#[1f72db0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_GetPeripheralAddress
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f7626c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+<LI><a href="#[1f76398]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_yellow (via Veneer)
+<LI><a href="#[1f763d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_blue (via Veneer)
+<LI><a href="#[1f76410]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_green (via Veneer)
+<LI><a href="#[1f7644c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_red (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f72edc]"></a>LCDSetPixel</STRONG> (ARM, 116 bytes, Stack size 8 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiCommand
+<LI><a href="#[1f73008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f72e28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetCircle
+<LI><a href="#[1f72ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetLine
+</UL>
+
+<P><STRONG><a name="[1f72ea0]"></a>LCDSetLine</STRONG> (ARM, 200 bytes, Stack size 36 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetPixel
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f72e64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetRect
+</UL>
+
+<P><STRONG><a name="[1f72e64]"></a>LCDSetRect</STRONG> (ARM, 328 bytes, Stack size 32 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72ea0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetLine
+<LI><a href="#[1f72fcc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiCommand
+<LI><a href="#[1f73008]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSpiData
+</UL>
+
+<P><STRONG><a name="[1f72e28]"></a>LCDSetCircle</STRONG> (ARM, 316 bytes, Stack size 68 bytes, lcd_ge8.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72edc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDSetPixel
+</UL>
+
+<P><STRONG><a name="[1f72dec]"></a>LCD_WriteChar</STRONG> (ARM, 392 bytes, Stack size 64 bytes, lcd_ge8.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = LCD_WriteChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f72d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteData
+<LI><a href="#[1f72d74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteCommand
+<LI><a href="#[1f72db0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_GetPeripheralAddress
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f75ee8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteString
+</UL>
+
+<P><STRONG><a name="[1f75ee8]"></a>LCD_WriteString</STRONG> (ARM, 92 bytes, Stack size 40 bytes, lcd_ge8.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = LCD_WriteString &rArr; LCD_WriteChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1f72dec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f762a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printExpr (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f72978]"></a>AT91F_PDC_SetNextRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7293c]"></a>AT91F_PDC_SetNextTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72900]"></a>AT91F_PDC_SetRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f728c4]"></a>AT91F_PDC_SetTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72888]"></a>AT91F_PDC_EnableTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7284c]"></a>AT91F_PDC_EnableRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72810]"></a>AT91F_PDC_DisableTx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f727d4]"></a>AT91F_PDC_DisableRx</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72798]"></a>AT91F_PDC_IsTxEmpty</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[1f7455c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_SendFrame
+</UL>
+
+<P><STRONG><a name="[1f7275c]"></a>AT91F_PDC_IsNextTxEmpty</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[1f7455c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_SendFrame
+</UL>
+
+<P><STRONG><a name="[1f72720]"></a>AT91F_PDC_IsRxEmpty</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[1f74598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_ReceiveFrame
+</UL>
+
+<P><STRONG><a name="[1f726e4]"></a>AT91F_PDC_IsNextRxEmpty</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[1f74598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_ReceiveFrame
+</UL>
+
+<P><STRONG><a name="[1f745d4]"></a>AT91F_PDC_Open</STRONG> (ARM, 72 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70e0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_Init
+<LI><a href="#[1f76140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Configure
+</UL>
+
+<P><STRONG><a name="[1f74610]"></a>AT91F_PDC_Close</STRONG> (ARM, 56 bytes, Stack size 0 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[1f710dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_Close
+<LI><a href="#[1f7482c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Close
+</UL>
+
+<P><STRONG><a name="[1f7455c]"></a>AT91F_PDC_SendFrame</STRONG> (ARM, 76 bytes, Stack size 8 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f7275c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_IsNextTxEmpty
+<LI><a href="#[1f72798]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_IsTxEmpty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f71118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_SendFrame
+<LI><a href="#[1f747b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_SendFrame
+</UL>
+
+<P><STRONG><a name="[1f74598]"></a>AT91F_PDC_ReceiveFrame</STRONG> (ARM, 76 bytes, Stack size 8 bytes, lib_at91sam7_pdc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f726e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_IsNextRxEmpty
+<LI><a href="#[1f72720]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_IsRxEmpty
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f71154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_ReceiveFrame
+<LI><a href="#[1f74778]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_ReceiveFrame
+</UL>
+
+<P><STRONG><a name="[1f75024]"></a>AT91F_PIO_CfgPeripheral</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70e84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI0_CfgPIO
+<LI><a href="#[1f70efc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI1_CfgPIO
+<LI><a href="#[1f746c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US0_CfgPIO
+<LI><a href="#[1f7509c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_CfgPIO
+<LI><a href="#[1f761b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US1_CfgPIO
+</UL>
+
+<P><STRONG><a name="[1f72324]"></a>AT91F_PIO_CfgOutput</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f722e8]"></a>AT91F_PIO_CfgInput</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f722ac]"></a>AT91F_PIO_CfgOpenDrain</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72270]"></a>AT91F_PIO_CfgPullup</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72234]"></a>AT91F_PIO_DisablePullup</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f721f8]"></a>AT91F_PIO_CfgDirectDrive</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f721bc]"></a>AT91F_PIO_CfgInputFilter</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72180]"></a>AT91F_PIO_GetInput</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72144]"></a>AT91F_PIO_IsInputSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72108]"></a>AT91F_PIO_SetOutput</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f720cc]"></a>AT91F_PIO_ClearOutput</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72090]"></a>AT91F_PIO_ForceOutput</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72054]"></a>AT91F_PIO_Enable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72018]"></a>AT91F_PIO_Disable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71fdc]"></a>AT91F_PIO_GetStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71fa0]"></a>AT91F_PIO_IsSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71f64]"></a>AT91F_PIO_OutputEnable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71f28]"></a>AT91F_PIO_OutputDisable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71eec]"></a>AT91F_PIO_GetOutputStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71eb0]"></a>AT91F_PIO_IsOutputSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71e74]"></a>AT91F_PIO_InputFilterEnable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71e38]"></a>AT91F_PIO_InputFilterDisable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71dfc]"></a>AT91F_PIO_GetInputFilterStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71dc0]"></a>AT91F_PIO_IsInputFilterSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71d84]"></a>AT91F_PIO_GetOutputDataStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71d48]"></a>AT91F_PIO_InterruptEnable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71d0c]"></a>AT91F_PIO_InterruptDisable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71cd0]"></a>AT91F_PIO_GetInterruptMaskStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71c94]"></a>AT91F_PIO_GetInterruptStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71c58]"></a>AT91F_PIO_IsInterruptMasked</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71c1c]"></a>AT91F_PIO_IsInterruptSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71be0]"></a>AT91F_PIO_MultiDriverEnable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71ba4]"></a>AT91F_PIO_MultiDriverDisable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71b68]"></a>AT91F_PIO_GetMultiDriverStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71b2c]"></a>AT91F_PIO_IsMultiDriverSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71af0]"></a>AT91F_PIO_A_RegisterSelection</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71ab4]"></a>AT91F_PIO_B_RegisterSelection</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71a78]"></a>AT91F_PIO_Get_AB_RegisterStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71a3c]"></a>AT91F_PIO_IsAB_RegisterSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71a00]"></a>AT91F_PIO_OutputWriteEnable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f719c4]"></a>AT91F_PIO_OutputWriteDisable</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71988]"></a>AT91F_PIO_GetOutputWriteStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7194c]"></a>AT91F_PIO_IsOutputWriteSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71910]"></a>AT91F_PIO_GetCfgPullup</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f718d4]"></a>AT91F_PIO_IsOutputDataStatusSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71898]"></a>AT91F_PIO_IsCfgPullupStatusSet</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f7185c]"></a>AT91F_PIOA_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f71820]"></a>AT91F_PIOB_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f717e4]"></a>AT91F_PIO_GetPeripheralAddress</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lib_at91sam7_pio.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71334]"></a>AT91F_SPI_CfgCs</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f712f8]"></a>AT91F_SPI_EnableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f712bc]"></a>AT91F_SPI_DisableInterrupt</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71280]"></a>AT91F_SPI_Reset</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71244]"></a>AT91F_SPI_Enable</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71208]"></a>AT91F_SPI_Disable</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f711cc]"></a>AT91F_SPI_CfgMode</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71190]"></a>AT91F_SPI_CfgPCS</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71154]"></a>AT91F_SPI_ReceiveFrame</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f74598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_ReceiveFrame
+</UL>
+
+<P><STRONG><a name="[1f71118]"></a>AT91F_SPI_SendFrame</STRONG> (ARM, 36 bytes, Stack size 8 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f7455c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_SendFrame
+</UL>
+
+<P><STRONG><a name="[1f710dc]"></a>AT91F_SPI_Close</STRONG> (ARM, 64 bytes, Stack size 8 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f74610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_Close
+</UL>
+
+<P><STRONG><a name="[1f710a0]"></a>AT91F_SPI_PutChar</STRONG> (ARM, 36 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f72d38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteData
+<LI><a href="#[1f72d74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_WriteCommand
+</UL>
+
+<P><STRONG><a name="[1f71064]"></a>AT91F_SPI_GetChar</STRONG> (ARM, 16 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f71028]"></a>AT91F_SPI_GetInterruptMaskStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70fec]"></a>AT91F_SPI_IsInterruptMasked</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70fb0]"></a>AT91F_SPI_GetStatus</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70f74]"></a>AT91F_SPI_IsStatusMasked</STRONG> (ARM, 12 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70f38]"></a>AT91F_SPI1_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f70efc]"></a>AT91F_SPI1_CfgPIO</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIO_CfgPeripheral
+</UL>
+
+<P><STRONG><a name="[1f70ec0]"></a>AT91F_SPI0_CfgPMC</STRONG> (ARM, 8 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f70e84]"></a>AT91F_SPI0_CfgPIO</STRONG> (ARM, 40 bytes, Stack size 8 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f75024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PIO_CfgPeripheral
+</UL>
+
+<P><STRONG><a name="[1f72d74]"></a>AT91F_SPI_WriteCommand</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1f710a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_PutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f72dec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteChar
+<LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen
+</UL>
+
+<P><STRONG><a name="[1f72d38]"></a>AT91F_SPI_WriteData</STRONG> (ARM, 20 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1f710a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_PutChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f72dec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteChar
+<LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen
+</UL>
+
+<P><STRONG><a name="[1f70e48]"></a>AT91F_SPI_ReadData</STRONG> (ARM, 96 bytes, Stack size 4 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f72db0]"></a>AT91F_SPI_GetPeripheralAddress</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70e0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_Init
+<LI><a href="#[1f72dec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteChar
+<LI><a href="#[1f75f24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearScreen
+</UL>
+
+<P><STRONG><a name="[1f70e0c]"></a>AT91F_SPI_Init</STRONG> (ARM, 96 bytes, Stack size 16 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f72db0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_SPI_GetPeripheralAddress
+<LI><a href="#[1f745d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PDC_Open
+<LI><a href="#[1f761f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_EnablePeripheralClock
+</UL>
+
+<P><STRONG><a name="[1f70dd0]"></a>AT91F_SPI_PDC_GetPeripheralAddress</STRONG> (ARM, 28 bytes, Stack size 0 bytes, lib_at91sam7_spi.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70a4c]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f70a10]"></a>__aeabi_uidivmod</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, uidiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_uidivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f74a48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_US_Baudrate (via Veneer)
+<LI><a href="#[1f7536c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_PMC_GetMasterClock (via Veneer)
+<LI><a href="#[1f75498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT91F_CKGR_CfgMainOscStartUpTime (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f70920]"></a>strlen</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1f76320]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_WriteString
+</UL>
+
+<P><STRONG><a name="[1f70434]"></a>__scatterload</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1f703bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_call_via_r3
+<LI><a href="#[1f706c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f70704]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1f703f8]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f703bc]"></a>__ARM_common_call_via_r3</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(i.__ARM_common_call_via_r3))
+<BR><BR>[Called By]<UL><LI><a href="#[1f70434]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[1f70038]"></a>__scatterload_copy</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[1f70038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f70038]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[1f6fffc]"></a>__scatterload_null</STRONG> (ARM, 4 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[1f6ffc0]"></a>__scatterload_zeroinit</STRONG> (ARM, 24 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[1f778b0]"></a>Undef_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f778b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f778b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Undef_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f77874]"></a>SWI_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f77874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f77874]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SWI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f77838]"></a>PAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f77838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f77838]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f777fc]"></a>DAbt_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f777fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f777fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DAbt_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f777c0]"></a>IRQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f777c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f777c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IRQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL>
+<P><STRONG><a name="[1f77784]"></a>FIQ_Handler</STRONG> (ARM, 4 bytes, Stack size unknown bytes, sam7.o(RESET))
+<BR><BR>[Calls]<UL><LI><a href="#[1f77784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1f77784]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FIQ_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> sam7.o(RESET)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
